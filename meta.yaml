@@ -1,0 +1,25 @@
+package:
+   name: ccfits
+   version: "2.5"
+
+source:
+  fn: heasoft-6.21.tar
+  url: https://heasarc.nasa.gov/cgi-bin/Tools/tarit/tarit.pl?mode=download&arch=src&src_pc_linux_sci=Y&src_other_specify=&general=futils
+
+build:
+  number: 0
+
+requirements:
+ 
+ build:
+     - cfitsio
+     - libtool
+     - automake
+     - cmake
+   
+ run:
+     - cfitsio
+
+about:
+  home: https://heasarc.gsfc.nasa.gov/fitsio/
+  license: GPL2
